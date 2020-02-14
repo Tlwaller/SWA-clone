@@ -23,8 +23,36 @@
 
 .open {
     display: flex;
+    animation: open .4s 1;
 }
 
-.untouched, .closed {
+.closed {
+    display: flex;
+    animation: close .4s 1;
+}
+
+.untouched {
     display: none;
+}
+
+@keyframes open {
+    0% {
+        opacity: 0;
+        transform: translateY(5em);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes close {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(5em);
+    }
 }

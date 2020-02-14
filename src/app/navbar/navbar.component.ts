@@ -15,10 +15,8 @@ export class NavbarComponent implements OnInit {
 
   toggleSearch = () => {
     if(this.boxStatus === 'untouched' || this.boxStatus === 'closed') {
-      console.log(this.boxStatus);
       this.boxStatus = 'open';
     } else if(this.boxStatus === 'open') {
-      console.log(this.boxStatus);
       this.boxStatus = 'closed';
     }
   }
