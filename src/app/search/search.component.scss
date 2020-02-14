@@ -1,0 +1,30 @@
+#search-container {
+    width: 100vw;
+    justify-content: center;
+
+    #search-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        top: 6.8em;
+        height: 7.8em;
+        width: 60em;
+        background-color: white;
+
+        #search-input {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+        }
+    }
+}
+
+.open {
+    display: flex;
+}
+
+.untouched, .closed {
+    display: none;
+}

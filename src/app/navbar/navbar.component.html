@@ -6,7 +6,6 @@
             <button id='nav-login-btn'>Log In</button>
             <h5>Enroll</h5>
             <h5>Español 🌐</h5>
-
         </div>
 
         <ul id='nav-bottom-items'>
@@ -19,7 +18,9 @@
 
             <li class='nav-item'>SPECIAL OFFERS</li>
             <li class='nav-item'>RAPID REWARDS®</li>
-            <img id='nav-search' src='../../assets/SWA-search.png' alt='search'/>
+            <img id='nav-search' src='../../assets/SWA-search.png' alt='search' (click)='toggleSearch()'/>
         </ul>
     </div>
 </nav>
+
+<app-search [boxStatus]='boxStatus'></app-search>
